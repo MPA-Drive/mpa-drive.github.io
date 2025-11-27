@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Model-Based Policy Adaptation (MPA) for Closed-Loop End-to-End Autonomous Driving">
+  <meta name="keywords" content="Autonomous Driving, Diffusion Model, Policy Adaptation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>MPA: Model-Based Policy Adaptation for Closed-Loop End-to-End Autonomous Driving</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -42,7 +42,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -80,7 +80,7 @@
     </div>
 
   </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -88,39 +88,34 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">MPA: Model-Based Policy Adaptation for Closed-Loop End-to-End Autonomous Driving</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://hhlin.info/">Haohong Lin</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://ai.stanford.edu/~yzzhang/">Yunzhi Zhang</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://wenhao.pub/">Wenhao Ding</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="https://jiajunwu.com/">Jiajun Wu</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://safeai-lab.github.io/#team">Ding Zhao</a><sup>1</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>CMU, </span>
+            <span class="author-block"><sup>2</sup>Stanford, </span>
+            <span class="author-block"><sup>3</sup>NVIDIA</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="./paper.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -129,7 +124,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/pdf/2511.21584"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -139,32 +134,32 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href="./slides.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Video</span>
+                  <span>Slides</span>
                 </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/HenryLHH/MPA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                <a href="https://huggingface.co/datasets/haohongl"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Data (Coming Soon)</span>
                   </a>
             </div>
 
@@ -183,68 +178,8 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        MPA enables E2E driving agents to adapt to challenging scenarios in closed-loop simulation.
       </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -258,31 +193,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            End-to-end (E2E) autonomous driving models have demonstrated strong performance in 
+            open-loop evaluations but often suffer from cascading errors and poor generalization in closed-loop settings. 
+            To address this gap, we propose Model-based Policy Adaptation (MPA), a general framework that enhances the robustness and safety of pretrained E2E driving agents during deployment. 
           </p>
+          
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            MPA first generates diverse counterfactual trajectories using a geometry-consistent simulation engine, exposing the agent to scenarios beyond the original dataset. Based on this generated data, MPA trains a diffusion-based policy adapter to refine the base policy's predictions and a multi-step Q value model to evaluate long-term outcomes. 
+            At inference time, the adapter proposes multiple trajectory candidates, and the Q value model selects the one with the highest expected utility. Experiments on the nuScenes benchmark using a photorealistic closed-loop simulator demonstrate that MPA significantly improves performance across in-domain, out-of-domain, and safety-critical scenarios. 
+            We further investigate how the scale of counterfactual data and inference-time guidance strategies affect overall effectiveness. 
           </p>
         </div>
       </div>
@@ -290,7 +209,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -298,60 +217,81 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
+      <div class="column is-full">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
+          <h2 class="title is-3">Motivation: Performance in Closed-Loop Evaluation</h2>
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
 
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="content">
+          <p>
+            We compare the L2 error of the E2E policy under different data sources on the right figure. We use a 3DGS-based simulator <a href="https://arxiv.org/pdf/2412.01718" target="_blank" rel="noopener noreferrer">HUGSIM</a> to reconstruct the scenes from the nuScenes dataset and compare the performance difference using ground truth data among all three E2E policies, we see a very close open-loop performance in motion prediction. This confirms the fidelity of the 3DGS-based simulation in its reconstruction quality. 
+          </p>
+          <p>
+            We also find that the open-loop pretrained E2E driving agents like UniAD have performance degradation in closed-loop evaluation due to the distribution shift caused by compounding errors. 
+          </p>
+          <p>
+            We further visualize some qualitative examples for the failure modes below. 
+          </p>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="content has-text-centered">
+          <img src="./static/images/2_closed_loop_error.jpg" 
+               style="width: 100%;"
+               alt="Closed-Loop Error Analysis">
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="content">
+          <p>
+            Driving off the road to non drive-able area near a construction zone.
+          </p>
+          <video id="closed-loop-failure1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/closed-loop_failure1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="content">
+          <p>
+            Crashing on a stopping vehicle ahead with no collision avoidance.
+          </p>
+          <video id="closed-loop-failure2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/closed-loop_failure2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Core Contribution</h2>
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <!-- <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
             We can also animate the scene by interpolating the deformation latent codes of two input
@@ -381,35 +321,176 @@
             <p class="is-bold">End Frame</p>
           </div>
         </div>
-        <br/>
+        <br/> -->
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <h3 class="title is-4">Methodology Overview</h3>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            MPA includes three key modules: (i) Counterfactual Data Generation to diversify the ego's behavior, 
+            (ii) a Diffusion-based Policy Adapter to refine the base policy's actions, 
+            and (iii) a Multi-step Q Value Model to evaluate and select the best action sequence at inference time.
+            For more details, welcome to check our <a href="https://arxiv.org/pdf/2511.21584">paper</a>.
           </p>
         </div>
         <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
+          <img src="./static/images/1_overview.jpg" 
+               style="width: 70%;"
+               alt="MPA Methodology Overview">
         </div>
-        <!--/ Re-rendering. -->
-
+        <h3 class="title is-4">Key Experiment Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            MPA-enhanced End-to-End driving agents outperform the base policies across in-domain, out-of-domain, and safety-critical scenarios in closed-loop simulation.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/Table1.png" 
+               style="width: 70%;"
+               alt="MPA Methodology Overview">
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/Table2.png" 
+               style="width: 70%;"
+               alt="MPA Methodology Overview">
+        </div>   
       </div>
     </div>
     <!--/ Animation. -->
+  </div>
+</section>
 
 
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <h2 class="title is-3">Qualitative results of the Closed-Loop Evaluation</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-light is-small">
+      <div class="hero-body">
+        <div class="container is-widescreen">
+          <div id="results-carousel" class="carousel results-carousel" style="max-height: 600px;">
+            <div class="item item-video-0001">
+              <video poster="" id="video-0001" autoplay controls muted loop playsinline h≈>
+                <source src="./static/videos/video_0001.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0004">
+              <video poster="" id="video-0004" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0004.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0005">
+              <video poster="" id="video-0005" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0005.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0006">
+              <video poster="" id="video-0006" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0006.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0009">
+              <video poster="" id="video-0009" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0009.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0010">
+              <video poster="" id="video-0010" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0010.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0043">
+              <video poster="" id="video-0043" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0043.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0191">
+              <video poster="" id="video-0191" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0191.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0196">
+              <video poster="" id="video-0196" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0196.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0446">
+              <video poster="" id="video-0446" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0446.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0457">
+              <video poster="" id="video-0457" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0457.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0458">
+              <video poster="" id="video-0458" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0458.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0459">
+              <video poster="" id="video-0459" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0459.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0475">
+              <video poster="" id="video-0475" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0475.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0477">
+              <video poster="" id="video-0477" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0477.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0479">
+              <video poster="" id="video-0479" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0479.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0480">
+              <video poster="" id="video-0480" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0480.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video-0499">
+              <video poster="" id="video-0499" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/video_0499.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
     <!-- Concurrent Work. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
@@ -417,26 +498,18 @@
 
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
+            There's a lot of excellent work that provides useful resources or share similar insights with our MPA framework. 
+            <a href="https://arxiv.org/pdf/2412.01718">HUGSIM</a> introduces an decomposed scene representation in the 3DGS to render photorealistic driving scenes, which paves our way to generate counterfactual driving scenarios.
+            <a href="https://arxiv.org/abs/2411.15139">DiffusionDrive</a> introduces a truncated diffusion policy framework to enhance the robustness of E2E driving agents. 
+            <a href="https://arxiv.org/pdf/2510.04333">RAP</a> introduces a rasterization-augmented planning to augment the ego's policy with diverse behaviors from surrounding vehicles to bridge the sim-to-real gap of E2E planning. 
           </p>
           <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            Our experiment is conducted using open-source E2E models, including <a href="https://arxiv.org/pdf/2212.10156">UniAD</a>, <a href="https://arxiv.org/pdf/2303.12077">VAD</a>, <a href="https://arxiv.org/pdf/2205.15997">LTF</a>, and <a href="https://arxiv.org/pdf/2406.08481">LAW</a>. 
           </p>
         </div>
       </div>
     </div>
     <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
@@ -444,11 +517,12 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@inproceedings{lin2025modelbased,
+  title     = {Model-Based Policy Adaptation for Closed-Loop End-to-end Autonomous Driving},
+  author    = {Haohong Lin and Yunzhi Zhang and Wenhao Ding and Jiajun Wu and Ding Zhao},
+  booktitle = {The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=4OLbpaTKJe}
 }</code></pre>
   </div>
 </section>
@@ -458,11 +532,11 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="./paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
+      <a class="icon-link" href="./slides.pdf" class="external-link" disabled>
+        <i class="fas fa-file-powerpoint"></i>
       </a>
     </div>
     <div class="columns is-centered">
@@ -475,7 +549,7 @@
           </p>
           <p>
             This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+              href="https://github.com/mpa-drive/mpa-drive.github.io">source code</a> of this website,
             we just ask that you link back to this page in the footer.
             Please remember to remove the analytics code included in the header of the website which
             you do not want on your website.
